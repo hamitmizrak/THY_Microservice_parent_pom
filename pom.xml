@@ -36,39 +36,16 @@
         <gson.version>2.8.6</gson.version>
         <swagger.version>2.0.3</swagger.version>
 
+        <!--Spring Boot version-->
+        <spring.boot.version>3.3.1</spring.boot.version>
         <!--Microservice-->
-        <spring.boot.version>3.1.1</spring.boot.version>
-        <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <spring-cloud.version>2023.0.3</spring-cloud.version>
         <spring.cloud.config.enabled>true</spring.cloud.config.enabled>
     </properties>
-
-    <!--dependencyManagement-->
-    <dependencyManagement>
-        <!--spring.boot.version-->
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <!-- spring-cloud-dependencies-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 
     <!--dependencies-->
     <dependencies>
-
         <!-- #### MICROSERVICE #################################################  -->
         <!--spring-boot-starter-web-->
         <dependency>
@@ -113,23 +90,6 @@
             <version>${swagger.version}</version>
         </dependency>
 
-        <!-- For Spring Boot 2+:-->
-        <!--<dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.6.15</version>
-        </dependency>-->
-
-        <!-- #### AUTHENTICATION / AUTHORIZATION #################################################  -->
-        <!--  json web token JWT-->
-        <!--
-            <dependency>
-                 <groupId>io.jsonwebtoken</groupId>
-                 <artifactId>jjwt</artifactId>
-                 <version>0.9.1</version>
-             </dependency>
-         -->
-
         <!-- #### DATABASE #################################################  -->
         <!-- Spring data-jpa-->
         <dependency>
@@ -143,88 +103,7 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
-        <!-- RDBMS H2DB-->
-        <!--<dependency>
-          <groupId>com.h2database</groupId>
-          <artifactId>h2</artifactId>
-          <scope>runtime</scope>
-        </dependency>-->
-
-        <!-- RDBMS Mssql-->
-        <!--<dependency>
-          <groupId>com.microsoft.sqlserver</groupId>
-          <artifactId>mssql-jdbc</artifactId>
-          <scope>runtime</scope>
-        </dependency>-->
-
-        <!-- RDBMS MYSQL-->
-        <!--<dependency>
-          <groupId>com.mysql</groupId>
-          <artifactId>mysql-connector-j</artifactId>
-          <scope>runtime</scope>
-        </dependency>
-    -->
-        <!-- RDBMS Postgresql-->
-        <!-- <dependency>
-           <groupId>org.postgresql</groupId>
-           <artifactId>postgresql</artifactId>
-           <scope>runtime</scope>
-         </dependency>-->
-
-        <!--Mongo DB Kalıcı veri-->
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>-->
-
-        <!--Mongo DB Embedded Test icin -->
-        <!--<dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo</artifactId>
-            <scope>test</scope>
-        </dependency>-->
-
-
-        <!-- #### REDIS #################################################  -->
-        <!--
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-
-       <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-data-redis</artifactId>
-           <exclusions>
-               <exclusion>
-                   <groupId>io.lettuce.core</groupId>
-                   <artifactId>lettuce-core</artifactId>
-               </exclusion>
-           </exclusions>
-       </dependency>
-
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
-        -->
-
         <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
-        <!-- E MAİL-->
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>-->
 
         <!--lombok-->
         <dependency>
@@ -253,39 +132,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- JSON işlemleri için gson-->
-        <!-- <dependency>
-             <groupId>com.google.code.gson</groupId>
-             <artifactId>gson</artifactId>
-             <version>${gson.version}</version>
-         </dependency>-->
-
-        <!-- jackson: JSON donusturmelerinde XML -->
-        <!--
-          <dependency>
-             <groupId>com.fasterxml.jackson.dataformat</groupId>
-             <artifactId>jackson-dataformat-xml</artifactId>
-         </dependency>
-         -->
-
-        <!-- web jar Bootstrap-->
-        <!--
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>3.3.7-1</version>
-        </dependency>
-        -->
-
-        <!-- web jar jquery-->
-        <!--
-        <dependency>
-             <groupId>org.webjars</groupId>
-             <artifactId>jquery</artifactId>
-             <version>3.3.1-1</version>
-         </dependency>
-         -->
-
         <!-- #### SECURITY #################################################  -->
         <!--security-->
         <dependency>
@@ -310,64 +156,39 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
-        <!-- #### DEPLOYMENT ################################################# -->
-        <!--for apache Tomcat-->
-        <!-- <dependency>
-           <groupId>javax.servlet</groupId>
-           <artifactId>javax.servlet-api</artifactId>
-           <version>4.0.1</version>
-           <scope>provided</scope>
-         </dependency>-->
-
-        <!--apache Tomcat-->
-        <!--   <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter-tomcat</artifactId>
-             <scope>provided</scope>
-           </dependency>-->
-
-        <!-- Docker Compose -->
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-docker-compose</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>-->
-
-        <!--grapQL: Dikkat: graphql ve graphiql aynı sürüm olmalıdır.-->
-        <!--   <dependency>
-               <groupId>com.graphql-java</groupId>
-               <artifactId>graphql-spring-boot-starter</artifactId>
-               <version>5.0.2</version>
-           </dependency>
-
-           <dependency>
-               <groupId>com.graphql-java</groupId>
-               <artifactId>graphql-java-tools</artifactId>
-               <version>5.2.4</version>
-           </dependency>-->
-
-        <!--  Prometheus: Prometheus için gerekli olacak -->
-        <!-- Prometheus:System %of Memoryconsumption ,of CPU consumption -->
-        <!--  <dependency>
-              <groupId>io.micrometer</groupId>
-              <artifactId>micrometer-registry-prometheus</artifactId>
-              <scope>runtime</scope>
-          </dependency>-->
-
     </dependencies>
+
+    <!--dependencyManagement-->
+    <dependencyManagement>
+        <!--spring.boot.version-->
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- spring-cloud-dependencies-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
     <!--build-->
     <build>
-
         <!--apache tomcat manuel deployment için-->
         <defaultGoal>spring-boot:run</defaultGoal>
         <finalName>${project.artifactId}</finalName>
 
         <plugins>
-
             <!--spring-boot-maven icin cok gerekli-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
