@@ -12,7 +12,10 @@
   <packaging>pom</packaging>
 
   <!-- servislerimi buraya ekleyecegim-->
-  <modules></modules>
+ <!--ilgili servisin artifactId: address-service-->
+  <modules>
+    <module>address-service</module>
+  </modules>
 
   <!--properties-->
   <properties>
@@ -71,6 +74,13 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+
+    <!--test-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
