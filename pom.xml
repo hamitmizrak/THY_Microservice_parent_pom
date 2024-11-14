@@ -17,7 +17,7 @@
     <!--alt sınıflarda <parent></parent> iceriğine aşağıdakiler yazılır-->
     <groupId>com.hamitmizrak.microservice</groupId>
     <artifactId>parent_pom</artifactId>
-    <version>1.0.0</version>
+    <version>v1.0.0</version>
     <packaging>pom</packaging>
 
     <!-- servislerimi buraya ekleyecegim-->
