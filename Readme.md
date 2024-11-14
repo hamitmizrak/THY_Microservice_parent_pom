@@ -124,11 +124,47 @@ git push origin master -f
 ---
 
 
-## Api Gateway
+## address-service github sadece link olarak geliyor ve tıklayamıyorsam hatası ve çözümü
 ```sh
 
 ```
 ---
+
+Bu durumda, `address-service` klasörüne tıklayamamanızın birkaç olası nedeni olabilir. Bu sorunu çözmek için aşağıdaki yöntemleri deneyebilirsiniz:
+
+### Olası Sebepler ve Çözümler:
+
+1. **Klasörün İçeriği Boşsa:**
+   Eğer `address-service` klasörünün içinde herhangi bir dosya yoksa, GitHub bu klasöre tıklamanıza izin vermiyor olabilir. `address-service` klasörüne dosya eklediğinizden emin olun ve tekrar kontrol edin.
+
+2. **Git Ignore Ayarları:**
+   `.gitignore` dosyanızda `address-service` klasörüne veya içindeki dosyalara yönelik bir kural eklenmiş olabilir. Bu durumda, `address-service` klasörü ve içeriği GitHub'a yüklenmez.
+    - `.gitignore` dosyanızı kontrol edin ve `address-service` klasörünün ya da içindeki dosyaların eklenmesini engelleyen bir satır olup olmadığını kontrol edin. Eğer varsa bu satırı silin ve değişiklikleri tekrar commit edip push yapın.
+
+3. **Commit ve Push Eksikliği:**
+   Klasör oluşturulmuş, ancak içerik commit edilmemiş veya GitHub'a push edilmemiş olabilir. `address-service` klasöründeki dosyaların commit edildiğinden ve ardından GitHub'a push yapıldığından emin olun:
+   ```sh
+   git add address-service/*
+   git commit -m "Added files to address-service"
+   git push origin master
+   ```
+
+4. **Git Cache Temizleme:**
+   Eğer `.gitignore` dosyasında değişiklik yaptıysanız ve önceden ignore edilen dosyalar hala gözükmüyorsa, Git cache'i temizleyip tekrar eklemeniz gerekebilir:
+   ```sh
+   git rm -r --cached address-service
+   git add address-service
+   git commit -m "Re-add address-service directory"
+   git push origin master
+   ```
+
+5. **GitHub Güncellemeleri:**
+   Bazen tarayıcı veya GitHub'ın kendisi kaynaklı bir sorun olabilir. Tarayıcı önbelleğini temizlemeyi veya başka bir tarayıcı kullanarak sayfayı kontrol etmeyi deneyin.
+
+6. **Yeniden Dosya Eklemek:**
+   `address-service` klasörünü tamamen kaldırıp yeniden ekleyebilirsiniz. Klasörü silip tekrar oluşturun ve dosyaları tekrar commit ve push yapın.
+
+Eğer yukarıdaki adımlarla sorununuzu çözemezseniz, terminal üzerinden klasörün içeriğini kontrol edip klasörün doğru şekilde versiyon kontrolüne dahil edilip edilmediğini görmek faydalı olabilir.
 
 
 ## 
