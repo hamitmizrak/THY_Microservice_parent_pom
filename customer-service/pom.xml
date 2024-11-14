@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!--
+	  | Spring Boot Sürümü | Spring Cloud Sürümü (Release Train)
+	  | ++++++++++++++++++ | +++++++++++++++++++++++++++++++++++++++++
+	  | 2.4.x              | 2020.0.x (Kod adı: Ilford)
+	  | 2.5.x - 2.7.x      | 2021.x (Kod adı: Jubilee)
+	  | 3.0.x - 3.2.x      | 2022.x (Kod adı: Kilburn)
+	  | 3.3.x ve sonrası   | 2023.x ve sonrası
+	-->
+
+	<!--modelVersion-->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--
+	root pom.xml gelen verilere göre parent ayarlar
+
+	<groupId>com.hamitmizrak.microservice</groupId>
+	<artifactId>parent_pom</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	-->
+
+	<!--parent-->
+	<parent>
+		<groupId>com.hamitmizrak.microservice</groupId>
+		<artifactId>parent_pom</artifactId>
+		<version>v1.0.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<!--Dikkat: Bunu mutlaka eklemeliyiz.-->
+	<!--artifactId: ilgil service icin özeldir. bunu mutlaka eklemeliyiz.-->
+	<artifactId>customer-service</artifactId>
+
+	<!--properties-->
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<!--dependencies-->
+	<dependencies>
+
+		<!-- devtools -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- RDBMS H2DB-->
+		<dependency>
+          <groupId>com.h2database</groupId>
+          <artifactId>h2</artifactId>
+          <scope>runtime</scope>
+        </dependency>
+	</dependencies>
+
+	<!--build-->
+	<!--<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>-->
+
+	<!-- Plugins kısmı, Maven yapısında derleme ve çalıştırma için gerekli eklentileri tanımlar. -->
+	<build>
+		<plugins>
+			<!-- Maven Compiler Plugin, Java kaynak kodunun hedef sürümde derlenmesini sağlar.
+                 Java 17 kullanımı için kaynak ve hedef sürüm ayarlanmıştır. -->
+			<plugin>
+				<!-- Apache Maven Compiler Plugin'in grup kimliğini tanımlar -->
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<!-- Maven Compiler Plugin'in kimliğini belirtir -->
+				<artifactId>maven-compiler-plugin</artifactId>
+
+				<!-- Plugin'in versiyonunu belirtir. Burada "3.5.1" versiyonu kullanılıyor -->
+				<version>3.5.1</version>
+
+				<!-- Bu kısım, Maven Compiler Plugin'in konfigürasyonunu içerir -->
+				<configuration>
+					<!-- Kaynak kodun derlenmesi için kullanılan Java sürümü; Java 17 olarak belirlenmiştir -->
+					<source>17</source>
+					<!-- Derlenmiş kodun hedef sürümü; Java 17 olarak ayarlanmıştır -->
+					<target>17</target>
+				</configuration>
+			</plugin>
+
+			<!-- Spring Boot Maven Plugin, Spring Boot uygulamalarını paketlemek ve çalıştırmak için kullanılır. -->
+			<plugin>
+				<!-- Spring Boot Maven Plugin'in grup kimliğini belirtir -->
+				<groupId>org.springframework.boot</groupId>
+
+				<!-- Spring Boot Maven Plugin'in kimliğini belirtir -->
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
