@@ -1,0 +1,18 @@
+# Spring Config
+spring:
+  application:
+    name: customer-service
+  cloud:
+    config:
+      uri: http://localhost:8888  # Config Server'ın URL'si
+      fail-fast: true             # Config Server bağlantı hatası durumunda hızlıca uygulamayı durdurur
+      retry:
+        max-attempts: 6            # Config Server'a yeniden bağlanma denemeleri
+        initial-interval: 1000     # İlk denemeler arası 10 saniye süre (milisaniye)
+        max-interval: 2000         # Maksimum deneme aralığı süresi (milisaniye)
+        multiplier: 1.2            # Deneme aralıklarını artırma katsayısı
+
+# Logging
+logging:
+  level:
+    org.springframework.cloud: DEBUG
