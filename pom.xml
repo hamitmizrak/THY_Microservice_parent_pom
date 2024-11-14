@@ -88,10 +88,10 @@
         </dependency>
 
         <!-- Gateway icin netflix-eureka-client eklemeliyiz -->
-        <dependency>
+      <!--  <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
         <!-- #### MVC/API #################################################  -->
