@@ -8,6 +8,13 @@ mvn archetype:generate -DgroupId=com.hamitmizrak.microservice -DartifactId=paren
 ```
 ---
 
+| Spring Boot Sürümü | Spring Cloud Sürümü (Release Train) |
+|--------------------|------------------------------------|
+| 2.4.x              | 2020.0.x (Kod adı: Ilford)         |
+| 2.5.x - 2.7.x      | 2021.x (Kod adı: Jubilee)          |
+| 3.0.x - 3.2.x      | 2022.x (Kod adı: Kilburn)          |
+| 3.3.x ve sonrası   | 2023.x ve sonrası                  |
+
 
 ## Parent Root Pom
 ```sh
@@ -104,7 +111,7 @@ mvn archetype:generate -DgroupId=com.hamitmizrak.microservice -DartifactId=paren
 ---
 
 
-## 
+## Api Gateway
 ```sh
 
 ```

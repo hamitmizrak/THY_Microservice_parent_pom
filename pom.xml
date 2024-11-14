@@ -1,6 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <!--
+      | Spring Boot Sürümü | Spring Cloud Sürümü (Release Train)
+      | ++++++++++++++++++ | +++++++++++++++++++++++++++++++++++++++++
+      | 2.4.x              | 2020.0.x (Kod adı: Ilford)
+      | 2.5.x - 2.7.x      | 2021.x (Kod adı: Jubilee)
+      | 3.0.x - 3.2.x      | 2022.x (Kod adı: Kilburn)
+      | 3.3.x ve sonrası   | 2023.x ve sonrası
+    -->
+
     <!--modelVersion-->
     <modelVersion>4.0.0</modelVersion>
 
@@ -31,14 +40,15 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-        <!--Version-->
+        <!--Libraries Version-->
         <modelmapper.version>2.4.4</modelmapper.version>
         <gson.version>2.8.6</gson.version>
         <swagger.version>2.0.3</swagger.version>
 
-        <!--Spring Boot version-->
-        <spring.boot.version>3.3.1</spring.boot.version>
         <!--Microservice-->
+        <!-- Spring Boot version: 3.3.1-->
+        <spring.boot.version>3.3.1</spring.boot.version>
+        <!-- Spring Cloud Version : 2023.0.3 -->
         <spring-cloud.version>2023.0.3</spring-cloud.version>
         <spring.cloud.config.enabled>true</spring.cloud.config.enabled>
     </properties>
@@ -46,7 +56,8 @@
 
     <!--dependencies-->
     <dependencies>
-        <!-- #### MICROSERVICE #################################################  -->
+
+        <!-- #### MICROSERVICE COMMON DEPENDENCY #################################################  -->
         <!--spring-boot-starter-web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,19 +75,26 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!--Eureka Client-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
         <!--Config Client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-        <!-- #### MVC / API #################################################  -->
+        <!--Eureka Client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!-- Gateway icin netflix-eureka-client eklemeliyiz -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
+        <!-- #### MVC/API #################################################  -->
         <!--Templates thymeleaf-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -89,21 +107,6 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
-
-        <!-- #### DATABASE #################################################  -->
-        <!-- Spring data-jpa-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <!-- JDBC Template-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-
-        <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
 
         <!--lombok-->
         <dependency>
@@ -130,6 +133,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <!-- #### DATABASE #################################################  -->
+        <!-- Spring data-jpa-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- JDBC Template-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
         <!-- #### SECURITY #################################################  -->
@@ -159,6 +175,10 @@
     </dependencies>
 
     <!--dependencyManagement-->
+    <!--
+    dependencyManagement, bağımlılıkların sürüm yönetimini sağlar.
+    Bu bölümde tanımlanan sürümler, alt bağımlılıklar tarafından otomatik olarak kullanılır.
+    -->
     <dependencyManagement>
         <!--spring.boot.version-->
         <dependencies>
@@ -189,6 +209,23 @@
         <finalName>${project.artifactId}</finalName>
 
         <plugins>
+        <!--
+        mvn clean install :
+        -->
+        <!-- plugins: Derleme ve paketleme işlemlerinde kullanılacak Maven eklentilerini tanımlar -->
+            <!-- Maven Compiler Plugin, kaynak kodunu belirli bir Java sürümünde derlemek için kullanılır -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <!-- source: Kaynak kodunun yazıldığı Java sürümünü belirtir, burada Java 17 olarak ayarlanmıştır -->
+                    <source>17</source>
+                    <!-- target: Derlenen kodun çalışacağı Java sürümünü belirtir, burada Java 17 olarak ayarlanmıştır -->
+                    <target>17</target>
+                </configuration>
+            </plugin>
+
             <!--spring-boot-maven icin cok gerekli-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
