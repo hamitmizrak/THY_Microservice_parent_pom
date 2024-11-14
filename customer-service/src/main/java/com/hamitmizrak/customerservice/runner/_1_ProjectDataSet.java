@@ -30,6 +30,7 @@ public class _1_ProjectDataSet implements CommandLineRunner {
         customerDto.setName("Hamit");
         customerDto.setSurname("Mızrak ");
         customerDto.setNotes("Notes");
+        iCustomerService.customerServiceCreate(customerDto);
         return customerDto;
     }
 
