@@ -8,6 +8,17 @@ mvn archetype:generate -DgroupId=com.hamitmizrak.microservice -DartifactId=paren
 ```
 ---
 
+## Maven Project
+```sh
+git rm -r --cached address-service
+git add address-service
+git commit -m "Re-add address-service directory"
+git push origin master
+```
+---
+
+
+
 | Spring Boot Sürümü | Spring Cloud Sürümü (Release Train) |
 |--------------------|------------------------------------|
 | 2.4.x              | 2020.0.x (Kod adı: Ilford)         |
