@@ -1,0 +1,410 @@
+2024-11-13T17:44:45.483+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Starting AddressServiceApplication using Java 17.0.5 with PID 18932 (E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service\target\classes started by Hamit-Mizrak in E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service)
+2024-11-13T17:44:45.483+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:45.484+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:45.618+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T17:44:45.626+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2024-11-13T17:44:45.666+03:00  INFO 18932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4a7c3fb-513f-395f-b1e2-77a48c518206
+2024-11-13T17:44:45.702+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-13T17:44:45.702+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T17:44:45.702+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-11-13T17:44:45.714+03:00  INFO 18932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T17:44:45.714+03:00  INFO 18932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2024-11-13T17:44:45.730+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-13T17:44:45.735+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn62: url=jdbc:h2:file:./database_memory_persist/blog user=SA
+2024-11-13T17:44:45.735+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-13T17:44:45.735+03:00  INFO 18932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database_memory_persist/blog'
+2024-11-13T17:44:45.755+03:00 DEBUG 18932 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-11-13T17:44:45.755+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-11-13T17:44:45.766+03:00  INFO 18932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T17:44:45.785+03:00  INFO 18932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:44:45.805+03:00  WARN 18932 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hamitmizrak.addressservice.data.repository.IAddressRepository
+2024-11-13T17:44:45.831+03:00  WARN 18932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T17:44:45.856+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-13T17:44:45.865+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-13T17:44:46.071+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-11-13T17:44:46.074+03:00 DEBUG 18932 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-13T17:44:46.078+03:00  WARN 18932 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-13T17:44:46.226+03:00  INFO 18932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T17:44:46.300+03:00  INFO 18932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-13T17:44:46.308+03:00  WARN 18932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-13T17:44:46.310+03:00  INFO 18932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-13T17:44:46.324+03:00  INFO 18932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-13T17:44:46.325+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-13T17:44:46.326+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-13T17:44:46.333+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-13T17:44:46.335+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:46.337+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:44:46.337+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:44:46.339+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-13T17:44:46.339+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-13T17:44:46.339+03:00  INFO 18932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-13T17:44:46.339+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731509086339 with initial instances count: 1
+2024-11-13T17:44:46.340+03:00  INFO 18932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESS-SERVICE with eureka with status UP
+2024-11-13T17:44:46.340+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509086340, current=UP, previous=STARTING]
+2024-11-13T17:44:46.340+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:44:46.341+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-13T17:44:46.341+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:44:46.341+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:46.341+03:00  INFO 18932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2024-11-13T17:44:46.342+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = UP, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@475768fc] as "application/json"
+2024-11-13T17:44:46.346+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:44:46.346+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:44:46.419+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Started AddressServiceApplication in 4.844 seconds (process running for 6940.597)
+2024-11-13T17:44:46.420+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._1_ProjectDataSet           : 1.Data set çalıştı
+2024-11-13T17:44:46.435+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._2_ProjectDataSet           : Project Data set -2 
+2024-11-13T17:44:46.436+03:00  INFO 18932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-13T17:44:47.648+03:00  INFO 18932 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 41 class path changes (41 additions, 0 deletions, 0 modifications)
+2024-11-13T17:44:47.649+03:00  INFO 18932 --- [Thread-22] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESS-SERVICE with eureka with status DOWN
+2024-11-13T17:44:47.649+03:00  INFO 18932 --- [Thread-22] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509087649, current=DOWN, previous=UP]
+2024-11-13T17:44:47.649+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:44:47.649+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:44:47.649+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:47.649+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = DOWN, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@475768fc] as "application/json"
+2024-11-13T17:44:47.651+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:44:47.651+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:44:47.655+03:00  INFO 18932 --- [Thread-22] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-13T17:44:47.657+03:00  INFO 18932 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:44:47.658+03:00  INFO 18932 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-13T17:44:47.665+03:00  INFO 18932 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-13T17:44:47.665+03:00  INFO 18932 --- [Thread-22] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-13T17:44:50.669+03:00  INFO 18932 --- [Thread-22] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-13T17:44:50.670+03:00 DEBUG 18932 --- [Thread-22] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081
+2024-11-13T17:44:50.670+03:00 DEBUG 18932 --- [Thread-22] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:50.673+03:00 DEBUG 18932 --- [Thread-22] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:44:50.673+03:00  INFO 18932 --- [Thread-22] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - deregister  status: 200
+2024-11-13T17:44:50.676+03:00  INFO 18932 --- [Thread-22] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-11-13T17:44:52.911+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Starting AddressServiceApplication using Java 17.0.5 with PID 18932 (E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service\target\classes started by Hamit-Mizrak in E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service)
+2024-11-13T17:44:52.911+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:44:52.912+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:44:53.042+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T17:44:53.052+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2024-11-13T17:44:53.086+03:00  INFO 18932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4a7c3fb-513f-395f-b1e2-77a48c518206
+2024-11-13T17:44:53.115+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-13T17:44:53.115+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T17:44:53.115+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-11-13T17:44:53.126+03:00  INFO 18932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T17:44:53.126+03:00  INFO 18932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2024-11-13T17:44:53.139+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-11-13T17:44:53.141+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn72: url=jdbc:h2:file:./database_memory_persist/blog user=SA
+2024-11-13T17:44:53.141+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-11-13T17:44:53.141+03:00  INFO 18932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database_memory_persist/blog'
+2024-11-13T17:44:53.155+03:00 DEBUG 18932 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-11-13T17:44:53.155+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-11-13T17:44:53.165+03:00  INFO 18932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T17:44:53.187+03:00  INFO 18932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:44:53.210+03:00  WARN 18932 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hamitmizrak.addressservice.data.repository.IAddressRepository
+2024-11-13T17:44:53.231+03:00  WARN 18932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T17:44:53.246+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-13T17:44:53.253+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-13T17:44:53.469+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-11-13T17:44:53.472+03:00 DEBUG 18932 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-13T17:44:53.474+03:00  WARN 18932 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-13T17:44:53.598+03:00  INFO 18932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T17:44:53.668+03:00  INFO 18932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-13T17:44:53.673+03:00  WARN 18932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-13T17:44:53.675+03:00  INFO 18932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-13T17:44:53.686+03:00  INFO 18932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-13T17:44:53.687+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-13T17:44:53.690+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-13T17:44:53.692+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:53.694+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:44:53.694+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:44:53.694+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-13T17:44:53.695+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-13T17:44:53.695+03:00  INFO 18932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-13T17:44:53.695+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731509093695 with initial instances count: 1
+2024-11-13T17:44:53.696+03:00  INFO 18932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESS-SERVICE with eureka with status UP
+2024-11-13T17:44:53.696+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509093696, current=UP, previous=STARTING]
+2024-11-13T17:44:53.696+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:44:53.697+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:44:53.697+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:44:53.697+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-13T17:44:53.697+03:00  INFO 18932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2024-11-13T17:44:53.698+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = UP, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@38a020d6] as "application/json"
+2024-11-13T17:44:53.700+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:44:53.700+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:44:53.781+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Started AddressServiceApplication in 3.063 seconds (process running for 6947.959)
+2024-11-13T17:44:53.782+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._1_ProjectDataSet           : 1.Data set çalıştı
+2024-11-13T17:44:53.797+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._2_ProjectDataSet           : Project Data set -2 
+2024-11-13T17:44:53.797+03:00  INFO 18932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-13T17:45:00.140+03:00  INFO 18932 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-11-13T17:45:00.140+03:00  INFO 18932 --- [Thread-28] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESS-SERVICE with eureka with status DOWN
+2024-11-13T17:45:00.141+03:00  INFO 18932 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509100141, current=DOWN, previous=UP]
+2024-11-13T17:45:00.141+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:45:00.141+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:45:00.141+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:00.141+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = DOWN, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@38a020d6] as "application/json"
+2024-11-13T17:45:00.146+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:45:00.146+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:45:00.151+03:00  INFO 18932 --- [Thread-28] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-13T17:45:00.154+03:00  INFO 18932 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:45:00.155+03:00  INFO 18932 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-11-13T17:45:00.160+03:00  INFO 18932 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-11-13T17:45:00.160+03:00  INFO 18932 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-13T17:45:03.177+03:00  INFO 18932 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-13T17:45:03.178+03:00 DEBUG 18932 --- [Thread-28] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081
+2024-11-13T17:45:03.179+03:00 DEBUG 18932 --- [Thread-28] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:03.186+03:00 DEBUG 18932 --- [Thread-28] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:03.187+03:00  INFO 18932 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - deregister  status: 200
+2024-11-13T17:45:03.189+03:00  INFO 18932 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Starting AddressServiceApplication using Java 17.0.5 with PID 18932 (E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service\target\classes started by Hamit-Mizrak in E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service)
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:05.392+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:05.509+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T17:45:05.517+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2024-11-13T17:45:05.553+03:00  INFO 18932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4a7c3fb-513f-395f-b1e2-77a48c518206
+2024-11-13T17:45:05.582+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-13T17:45:05.582+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T17:45:05.582+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-11-13T17:45:05.599+03:00  INFO 18932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T17:45:05.599+03:00  INFO 18932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2024-11-13T17:45:05.610+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-11-13T17:45:05.613+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn82: url=jdbc:h2:file:./database_memory_persist/blog user=SA
+2024-11-13T17:45:05.613+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-11-13T17:45:05.613+03:00  INFO 18932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database_memory_persist/blog'
+2024-11-13T17:45:05.627+03:00 DEBUG 18932 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-11-13T17:45:05.627+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-11-13T17:45:05.637+03:00  INFO 18932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T17:45:05.657+03:00  INFO 18932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:45:05.675+03:00  WARN 18932 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hamitmizrak.addressservice.data.repository.IAddressRepository
+2024-11-13T17:45:05.698+03:00  WARN 18932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T17:45:05.717+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-13T17:45:05.727+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-13T17:45:05.922+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-11-13T17:45:05.924+03:00 DEBUG 18932 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-13T17:45:05.927+03:00  WARN 18932 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-13T17:45:06.051+03:00  INFO 18932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T17:45:06.119+03:00  INFO 18932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-13T17:45:06.127+03:00  WARN 18932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-13T17:45:06.128+03:00  INFO 18932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-13T17:45:06.140+03:00  INFO 18932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-13T17:45:06.141+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-13T17:45:06.144+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-13T17:45:06.146+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:06.148+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:06.148+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:45:06.149+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-13T17:45:06.149+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-13T17:45:06.150+03:00  INFO 18932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-13T17:45:06.150+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731509106150 with initial instances count: 1
+2024-11-13T17:45:06.151+03:00  INFO 18932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESS-SERVICE with eureka with status UP
+2024-11-13T17:45:06.151+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509106151, current=UP, previous=STARTING]
+2024-11-13T17:45:06.151+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:45:06.152+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-13T17:45:06.152+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:45:06.152+03:00  INFO 18932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2024-11-13T17:45:06.152+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:06.153+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = UP, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@895b19f] as "application/json"
+2024-11-13T17:45:06.155+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:45:06.155+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:45:06.223+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Started AddressServiceApplication in 2.967 seconds (process running for 6960.402)
+2024-11-13T17:45:06.224+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._1_ProjectDataSet           : 1.Data set çalıştı
+2024-11-13T17:45:06.239+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._2_ProjectDataSet           : Project Data set -2 
+2024-11-13T17:45:06.240+03:00  INFO 18932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-13T17:45:36.160+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509106151
+2024-11-13T17:45:36.160+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:45:36.161+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:36.167+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:36.167+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:45:36.168+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:36.171+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:48.453+03:00  INFO 18932 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-13T17:45:48.454+03:00  INFO 18932 --- [Thread-34] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESS-SERVICE with eureka with status DOWN
+2024-11-13T17:45:48.454+03:00  INFO 18932 --- [Thread-34] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509148454, current=DOWN, previous=UP]
+2024-11-13T17:45:48.455+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:45:48.455+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:45:48.455+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:48.455+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = DOWN, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@895b19f] as "application/json"
+2024-11-13T17:45:48.458+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:45:48.458+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:45:48.461+03:00  INFO 18932 --- [Thread-34] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-13T17:45:48.464+03:00  INFO 18932 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:45:48.465+03:00  INFO 18932 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-11-13T17:45:48.488+03:00  INFO 18932 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-11-13T17:45:48.488+03:00  INFO 18932 --- [Thread-34] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-11-13T17:45:51.495+03:00  INFO 18932 --- [Thread-34] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-11-13T17:45:51.496+03:00 DEBUG 18932 --- [Thread-34] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081
+2024-11-13T17:45:51.496+03:00 DEBUG 18932 --- [Thread-34] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:51.503+03:00 DEBUG 18932 --- [Thread-34] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:51.503+03:00  INFO 18932 --- [Thread-34] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - deregister  status: 200
+2024-11-13T17:45:51.507+03:00  INFO 18932 --- [Thread-34] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-11-13T17:45:53.618+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Starting AddressServiceApplication using Java 17.0.5 with PID 18932 (E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service\target\classes started by Hamit-Mizrak in E:\1_Kodlar\Microservices\thy_microservice\parent_pom\address-service)
+2024-11-13T17:45:53.618+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-11-13T17:45:53.619+03:00  INFO 18932 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=address-service, profiles=[default], label=null, version=63aa3b351488aedc28a7b84117bbc2787f42b7e7, state=null
+2024-11-13T17:45:53.747+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-13T17:45:53.756+03:00  INFO 18932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2024-11-13T17:45:53.794+03:00  INFO 18932 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a4a7c3fb-513f-395f-b1e2-77a48c518206
+2024-11-13T17:45:53.827+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-13T17:45:53.827+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-13T17:45:53.827+03:00  INFO 18932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-11-13T17:45:53.839+03:00  INFO 18932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-13T17:45:53.839+03:00  INFO 18932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2024-11-13T17:45:53.852+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-11-13T17:45:53.866+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn92: url=jdbc:h2:file:./database_memory_persist/blog user=SA
+2024-11-13T17:45:53.866+03:00  INFO 18932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-11-13T17:45:53.866+03:00  INFO 18932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database_memory_persist/blog'
+2024-11-13T17:45:53.885+03:00 DEBUG 18932 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-11-13T17:45:53.885+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-11-13T17:45:53.895+03:00  INFO 18932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-13T17:45:53.913+03:00  INFO 18932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:45:53.933+03:00  WARN 18932 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hamitmizrak.addressservice.data.repository.IAddressRepository
+2024-11-13T17:45:53.956+03:00  WARN 18932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-13T17:45:53.972+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-13T17:45:53.980+03:00 DEBUG 18932 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-13T17:45:54.155+03:00 DEBUG 18932 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-11-13T17:45:54.158+03:00 DEBUG 18932 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-13T17:45:54.161+03:00  WARN 18932 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-13T17:45:54.282+03:00  INFO 18932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-13T17:45:54.346+03:00  INFO 18932 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-13T17:45:54.353+03:00  WARN 18932 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-13T17:45:54.354+03:00  INFO 18932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-13T17:45:54.367+03:00  INFO 18932 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-11-13T17:45:54.368+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-11-13T17:45:54.368+03:00  INFO 18932 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-11-13T17:45:54.369+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-11-13T17:45:54.371+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-11-13T17:45:54.372+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:54.374+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:45:54.374+03:00 DEBUG 18932 --- [restartedMain] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:45:54.374+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-11-13T17:45:54.375+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-11-13T17:45:54.375+03:00  INFO 18932 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-13T17:45:54.375+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1731509154375 with initial instances count: 1
+2024-11-13T17:45:54.376+03:00  INFO 18932 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADDRESS-SERVICE with eureka with status UP
+2024-11-13T17:45:54.376+03:00  INFO 18932 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509154376, current=UP, previous=STARTING]
+2024-11-13T17:45:54.376+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:45:54.377+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:45:54.377+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:45:54.377+03:00  INFO 18932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-13T17:45:54.377+03:00  INFO 18932 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2024-11-13T17:45:54.377+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = UP, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@2051f38b] as "application/json"
+2024-11-13T17:45:54.379+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:45:54.379+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:45:54.448+03:00  INFO 18932 --- [restartedMain] c.h.a.AddressServiceApplication          : Started AddressServiceApplication in 2.894 seconds (process running for 7008.626)
+2024-11-13T17:45:54.449+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._1_ProjectDataSet           : 1.Data set çalıştı
+2024-11-13T17:45:54.467+03:00  INFO 18932 --- [restartedMain] c.h.a.runner._2_ProjectDataSet           : Project Data set -2 
+2024-11-13T17:45:54.467+03:00  INFO 18932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-13T17:46:24.380+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:46:24.380+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:46:24.380+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:46:24.381+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:46:24.383+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:46:24.383+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:46:24.384+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:46:54.399+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:46:54.399+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:46:54.399+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:46:54.399+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:46:54.401+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:46:54.401+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:46:54.401+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:47:24.409+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:47:24.409+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:47:24.409+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:47:24.409+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:47:24.412+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:47:24.412+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:47:24.412+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:47:54.426+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:47:54.426+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:47:54.426+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:47:54.426+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:47:54.429+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:47:54.429+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:47:54.429+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:48:24.442+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:48:24.442+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:48:24.442+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:48:24.443+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:48:24.450+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:48:24.450+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:48:24.451+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:48:54.451+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:48:54.451+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:48:54.459+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:48:54.460+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:48:54.460+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:48:54.464+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:48:54.464+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:49:24.471+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:49:24.471+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:49:24.471+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:49:24.472+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:49:24.477+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:49:24.477+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:49:24.477+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:49:54.482+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:49:54.482+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:49:54.482+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:49:54.482+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:49:54.488+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:49:54.488+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:49:54.488+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:50:24.500+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-11-13T17:50:24.500+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:50:24.500+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081?status=UP&lastDirtyTimestamp=1731509154376
+2024-11-13T17:50:24.500+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:50:24.502+03:00 DEBUG 18932 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:50:24.502+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2024-11-13T17:50:24.503+03:00 DEBUG 18932 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-11-13T17:50:40.363+03:00  INFO 18932 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADDRESS-SERVICE with eureka with status DOWN
+2024-11-13T17:50:40.363+03:00  INFO 18932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1731509440363, current=DOWN, previous=UP]
+2024-11-13T17:50:40.363+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081: registering service...
+2024-11-13T17:50:40.364+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ADDRESS-SERVICE
+2024-11-13T17:50:40.364+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-11-13T17:50:40.364+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = Hamit-Mizrak.mshome.net:address-service:8081, appName = ADDRESS-SERVICE, hostName = Hamit-Mizrak.mshome.net, status = DOWN, ipAddr = 172.27.80.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@2051f38b] as "application/json"
+2024-11-13T17:50:40.366+03:00 DEBUG 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-11-13T17:50:40.366+03:00  INFO 18932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADDRESS-SERVICE/Hamit-Mizrak.mshome.net:address-service:8081 - registration status: 204
+2024-11-13T17:50:40.373+03:00  INFO 18932 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-13T17:50:40.596+03:00  INFO 18932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-11-13T17:50:40.613+03:00  INFO 18932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-11-13T17:50:40.613+03:00  INFO 18932 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

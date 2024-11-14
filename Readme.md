@@ -14,6 +14,8 @@ git rm -r --cached address-service
 git add address-service
 git commit -m "Re-add address-service directory"
 git push origin master
+git push origin master --force
+git push origin master -f
 ```
 ---
 
