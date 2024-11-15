@@ -12,4 +12,11 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="address-service" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="parent_pom" options="-parameters" />
+    </option>
+  </component>
 </project>

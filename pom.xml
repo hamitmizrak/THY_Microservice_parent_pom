@@ -58,7 +58,7 @@
     <!--dependencies-->
     <dependencies>
 
-        <!-- #### MICROSERVICE COMMON DEPENDENCY #################################################  -->
+        <!-- #### MICROSERVICE ORTAK DEPENDENCY #################################################  -->
         <!--spring-boot-starter-web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -88,10 +88,30 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--Mikroservisler arasında http isteklerini icin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!--Circuit Breaker-->
+        <!-- Resilience4j -->
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-spring-boot3</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
         <!-- Gateway icin netflix-eureka-client eklemeliyiz -->
      <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>-->
+
+        <!-- Spring Cloud Sleuth -->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>-->
 
         <!-- #### ÖNEMLİ KÜTÜPHANLER #################################################  -->
@@ -202,7 +222,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <!--build-->
     <build>
         <!--apache tomcat manuel deployment için-->
@@ -224,6 +243,11 @@
                     <source>17</source>
                     <!-- target: Derlenen kodun çalışacağı Java sürümünü belirtir, burada Java 17 olarak ayarlanmıştır -->
                     <target>17</target>
+
+                    <!--feign icin parametre ekledik-->
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
 
