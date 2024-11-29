@@ -104,6 +104,4 @@ public class CustomerServiceImpl implements ICustomerService<CustomerDto, Custom
         return entityCustomerToDto(customerEntityDelete);
     }
 
-
-
 }
